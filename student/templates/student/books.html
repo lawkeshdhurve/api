@@ -1,0 +1,7 @@
+<h2>All Books</h2>
+<ul>
+  {% for book in books %}
+    <li>{{ book.title }} by {{ book.author }} {% if book.available %}(Available){% else %}(Issued){% endif %}</li>
+  {% endfor %}
+</ul>
+<a href="{% url 'home' %}">Back to Home</a>

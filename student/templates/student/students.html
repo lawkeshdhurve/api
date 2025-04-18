@@ -1,0 +1,7 @@
+<h2>All Students</h2>
+<ul>
+  {% for student in students %}
+    <li>{{ student.name }} - {{ student.roll_number }}</li>
+  {% endfor %}
+</ul>
+<a href="{% url 'home' %}">Back to Home</a>

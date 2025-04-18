@@ -1,0 +1,22 @@
+
+<h1 style = "text-align: center;">Welcome to library management system</h1>
+
+<h1>📚 Issued Books</h1>
+
+{% if issued_books %}
+    <ul>
+    {% for issue in issued_books %}
+        <li>
+            <strong>{{ issue.book.title }}</strong> issued to <em>{{ issue.student.name }}</em><br>
+            Issued on: {{ issue.issue_date }} | Return by: {{ issue.return_date }}
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No books are currently issued.</p>
+{% endif %}
+
+<hr>
+
+<a href="{% url 'books' %}">View All Books</a> |
+<a href="{% url 'students' %}">View All Students</a>
