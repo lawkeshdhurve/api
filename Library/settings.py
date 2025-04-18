@@ -14,7 +14,7 @@ from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-#CSRF_TRUSTED_ORIGINS=["https://restapiproject-production-863b.up.railway.app"]
+CSRF_TRUSTED_ORIGINS=["https://web-production-ce74e.up.railway.app"]
 
 
 
